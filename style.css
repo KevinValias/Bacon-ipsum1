@@ -1,0 +1,120 @@
+/* This is the Body */
+body {
+ height: 100vh;
+ width: 100wh;
+ display: grid;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family:'Roboto Slab', serif;
+  }
+
+  h2 {
+    font-family:'Roboto Slab', serif;
+    font-size: 40px;
+    font-weight: lighter;
+  }
+
+
+.mainbox {
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: #34A8DD;
+  grid-area: mainbox;
+ 
+  }
+
+.box1 {
+   text-align: center;
+   background-color: #F7F5F6;
+   grid-area: box1;
+   
+ }
+ .box2 {
+   background-color: #F7F5F6;
+   text-align: center;
+   grid-area: box2;
+ }
+ .box3 {
+   background-color: #F7F5F6;
+   text-align: center;
+   grid-area: box3;
+ }
+
+
+
+ #teal {
+  width: 60%;
+  height: 20pt;
+  background-color: #33A8DD;
+  border: 1px black solid;
+  margin-top: 100px;
+  
+}
+
+#orange {
+  width: 60%;
+  height: 20pt;
+  background-color: #F46731 ;
+  border: 1px black solid;
+  margin-top: 100px;
+
+  
+}
+
+#green {
+  width: 60%;
+  height: 20pt;
+  background-color: #2BCDC0;
+  border: 1px black solid;
+  margin-top: 100px;
+}
+
+p {
+  margin-left: 80pt;
+  margin-right: 80pt;
+}
+  
+
+
+@media (max-width: 992px) { 
+ .thegrid {
+  grid-template-areas: 
+  "mainbox mainbox mainbox"
+  "mainbox mainbox mainbox" 
+  "box1 box2 box3"
+}
+ }
+
+
+@media (max-width: 576px) {
+ .thegrid {
+  grid-template-areas: 
+  "mainbox"
+  "box1"
+  "box2"
+  "box3";
+  text-align: center;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+ 
+  .box1 {background-color: black;}
+  .box1 {color:white;}
+  
+  .box2 {background-color: black;}
+  .box2 {color:white;}
+  
+  .box3 {background-color: black;}
+  .box3 {color:white;}
+  
+  .mainbox {background-color: #2BCDC0;}
+  .mainbox { display: flex}
+  .mainbox {justify-content: center;}
+  .mainbox {align-items: center;}
+
+
+}
